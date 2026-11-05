@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medi&amp;C · Staff</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+/* 한 가지 모습(브랜드 오렌지)으로 고정: 라이트·다크 모두 같은 색 */
+:root{
+  --orange:#e2651f;      /* 브랜드 오렌지: 페이지 바탕 */
+  --orange-deep:#c9561a; /* 눌림·구분선 */
+  --cream:#fff8f1;       /* 로고·버튼 글자 */
+  --ink:#1c1714;         /* 태그라인·버튼 면 */
+  --ink-soft:rgba(28,23,20,.72);
+  --sans:"Inter","Pretendard","IBM Plex Sans KR",sans-serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--orange);color:var(--ink);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased;
+  display:flex;flex-direction:column;padding:0 max(16px,env(safe-area-inset-right)) 0 max(16px,env(safe-area-inset-left))}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding-block:64px}
+.card{width:100%;max-width:440px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.logo{margin:0;display:inline-flex;align-items:flex-start;gap:6px;color:var(--cream);font-family:var(--sans);font-weight:600;font-size:64px;line-height:1;letter-spacing:-.02em}
+.logo svg{display:block;width:248px;max-width:100%;height:auto}
+.tag{margin:22px 0 0;font-family:var(--sans);font-weight:300;font-size:var(--tag,30px);letter-spacing:-.005em;line-height:1.2;color:var(--ink);white-space:nowrap}
+.label{margin:36px 0 0;font-family:var(--sans);font-weight:500;font-size:12px;line-height:1.4;letter-spacing:.34em;text-transform:uppercase;color:var(--cream)}
+.rule{width:28px;height:1px;background:var(--ink-soft);opacity:.5;margin:28px 0 40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;height:54px;padding:0 44px;min-width:230px;
+  background:var(--ink);color:var(--cream);border-radius:999px;text-decoration:none;font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;
+  transition:background .15s, transform .15s}
+.btn:hover{background:#000}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
+.btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6}
+.hint{margin:22px 0 0;font-size:13px;line-height:1.7;color:var(--ink-soft);max-width:330px;word-break:keep-all;text-wrap:balance}
+.hint b{font-weight:600;color:var(--ink)}
+footer{border-top:1px solid rgba(28,23,20,.18);padding-block:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--ink-soft);letter-spacing:.02em}
+@media (max-width:480px){.logo svg{width:200px}.tag{--tag:24px}.btn{width:100%}}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+/* 모바일: 구글 사이트가 삽입 칸 높이를 줄이므로 작은 높이에 맞춘 압축 배치 */
+@media (max-height:620px) and (max-width:700px){
+  main{padding-block:14px}
+  .logo svg{width:150px}
+  .tag{--tag:18px;margin-top:10px}
+  .label{margin-top:12px;font-size:10px}
+  .rule{margin:12px 0 16px}
+  .btn{height:44px;min-width:200px;font-size:13px}
+  .hint{margin-top:12px;font-size:11px;line-height:1.6;max-width:300px}
+  footer{display:none}
+}
+@media (max-height:620px) and (max-width:480px){.btn{width:auto}}
+.card{transform-origin:center center}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1 class="logo"><svg role="img" aria-label="Medi&amp;C" viewBox="150 -566 8202 2079"><path fill="currentColor" d="M150 1490H412V738C412 625 406 419 402 250C457 442 517 641 552 738L831 1490H1058L1333 738C1368 638 1431 433 1482 242C1479 419 1473 627 1473 738V1490H1739V0H1336L1056 769C1027 858 981 1042 946 1189C912 1040 865 857 835 769L552 0H150ZM2496.424 1513C2745.424 1513 2919.424 1394 2973.424 1213L2734.424 1164C2699.424 1259 2613.424 1309 2499.424 1309C2332.424 1309 2219.424 1203 2212.424 1004H2990.424V922C2990.424 530 2752.424 358 2479.424 358C2159.424 358 1953.424 594 1953.424 938C1953.424 1288 2159.424 1513 2496.424 1513ZM2213.424 827C2225.424 678 2321.424 562 2480.424 562C2635.424 562 2722.424 667 2737.424 827ZM3600.848 1510C3793.848 1510 3879.848 1394 3920.848 1313H3936.848V1490H4191.848V0H3931.848V557H3920.848C3880.848 478 3798.848 358 3599.848 358C3341.848 358 3139.848 561 3139.848 933C3139.848 1300 3335.848 1510 3600.848 1510ZM3671.848 1296C3497.848 1296 3405.848 1142 3405.848 932C3405.848 724 3495.848 572 3671.848 572C3842.848 572 3936.848 714 3936.848 932C3936.848 1150 3840.848 1296 3671.848 1296ZM4442.272 1490H4702.272V372H4442.272ZM4572.272 214C4655.272 214 4724.272 150 4724.272 71C4724.272 -8 4655.272 -71 4572.272 -71C4489.272 -71 4421.272 -8 4421.272 71C4421.272 150 4489.272 214 4572.272 214ZM5394.696 1511C5525.696 1511 5672.696 1470 5777.696 1381L5872.696 1490H6156.696L5938.696 1235C6010.696 1139 6067.696 995 6067.696 790H5842.696C5842.696 888 5819.696 976 5780.696 1050L5505.696 729L5601.696 659C5721.696 572 5799.696 462 5799.696 325C5799.696 137 5655.696 -17 5422.696 -17C5186.696 -17 5031.696 139 5031.696 347C5031.696 483 5097.696 590 5184.696 698C5018.696 815 4904.696 917 4904.696 1098C4904.696 1329 5090.696 1511 5394.696 1511ZM5635.696 1218C5563.696 1269 5479.696 1298 5396.696 1298C5256.696 1298 5161.696 1217 5161.696 1092C5161.696 1009 5203.696 949 5299.696 879L5324.696 861ZM5371.696 570C5306.696 489 5264.696 423 5264.696 349C5264.696 258 5328.696 196 5425.696 196C5520.696 196 5576.696 255 5576.696 333C5576.696 413 5517.696 470 5458.696 511ZM6933.12 1510C7285.12 1510 7521.12 1279 7562.12 994H7292.12C7258.12 1170 7114.12 1271 6936.12 1271C6694.12 1271 6519.12 1088 6519.12 746C6519.12 408 6693.12 219 6937.12 219C7115.12 219 7259.12 320 7292.12 496H7561.12C7514.12 170 7260.12 -20 6933.12 -20C6544.12 -20 6251.12 264 6251.12 746C6251.12 1226 6541.12 1510 6933.12 1510ZM7696 -566H8352V89Z"/></svg></h1>
+    <p class="tag">Medical communication</p>
+    <p class="label">Internal Workspace</p>
+    <div class="rule" aria-hidden="true"></div>
+    <a class="btn" href="https://script.google.com/a/macros/medinc.co.kr/s/AKfycbyq7BwrO_4t1OUnYiScKpB0IM6SesJE6TQwwQdjyLz1UYRai4byOl8mJP9vIsIGFBO08A/exec" target="_blank" rel="noopener">
+      Log in
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <p class="hint">회사 구글 계정 <b>@medinc.co.kr</b>로 로그인됩니다. 개인 계정과 함께 로그인돼 있다면 회사 계정 전용 크롬 프로필에서 열어 주세요.</p>
+  </div>
+</main>
+<footer>
+  <span>© Medi&amp;C</span>
+  <span>Staff only</span>
+</footer>
+<script>
+/* 칸이 더 작으면 내용 전체를 비율대로 줄여 잘리지 않게 */
+(function(){var c=document.querySelector('.card');function fit(){c.style.transform='';var h=c.getBoundingClientRect().height+28,H=window.innerHeight;if(h>H){c.style.transform='scale('+Math.max(.5,H/h).toFixed(3)+')';}}
+window.addEventListener('resize',fit);window.addEventListener('load',fit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);fit();})();
+</script>
+</body>
+</html>
